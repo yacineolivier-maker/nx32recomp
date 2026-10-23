@@ -1,0 +1,10 @@
+# Fonctions invitées remplacées par une implémentation native (runtime/hle.c ; adresses propres au jeu : jeu_hle_init).
+# Une par ligne : nom de symbole ou adresse absolue (hex). Le code d'origine reste appelable via orig_XXXXXXXX
+# (macros HLE_<nom> / ORIG_<nom> générées dans funcs.h pour les entrées nommées). Symbole absent du jeu : ignoré.
+
+# graphismes : trace du pilote NVN d'origine (NX_NVN_TRACE_ORIGINE)
+nvnBootstrapLoader
+_ZN2nv22DumpGraphicsMemoryInfoEv
+NvOsDrvOpen
+# vidéo : pas de décodeur matériel (NVDEC) ; movie::Decoder natif (runtime/movie.cpp, Media Foundation)
+_ZN5movie7DecoderC1ENS_11DecoderTypeENS_19DecoderOutputFormatE

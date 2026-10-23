@@ -1,0 +1,13 @@
+diff --git a/src/shader_recompiler/frontend/maxwell/translate_program.cpp b/src/shader_recompiler/frontend/maxwell/translate_program.cpp
+index 0cc4b3b..f161d29 100644
+--- a/src/shader_recompiler/frontend/maxwell/translate_program.cpp
++++ b/src/shader_recompiler/frontend/maxwell/translate_program.cpp
+@@ -68,7 +68,7 @@ void CollectInterpolationInfo(Environment& env, IR::Program& program) {
+                 continue;
+             }
+             if (imap && imap != value) {
+-                throw NotImplementedException("Per component interpolation");
++                continue; /* nx32recomp : interpolation par composante -> celle de la première composante */
+             }
+             imap = value;
+         }

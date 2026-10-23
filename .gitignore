@@ -1,0 +1,17 @@
+# sorties (code et données issus d'un jeu : ne jamais versionner)
+build/
+gen/
+donnees/
+*.bin
+*.elf
+*.nso
+*.nca
+*.nsp
+*.romfs
+*.keys
+# dépendances tierces (docs/DEPENDANCES.md)
+tiers/
+# profils de jeux (adresses du binaire d'un jeu), sauf l'exemple
+profil/*
+!profil/exemple/
+__pycache__/
