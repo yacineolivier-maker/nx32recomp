@@ -16,6 +16,8 @@ Existing Switch recompilers only handle AArch64. Some Switch titles, notably ear
 
 Code comments are in French.
 
+Written with AI assistance (Claude). Not affiliated with Nintendo or with the Eden project.
+
 ## Legal
 
 This repository contains **no game code, data or keys**. Never commit or distribute what it produces from a game:
